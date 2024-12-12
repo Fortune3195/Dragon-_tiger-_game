@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dragon Tiger Game</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dragon Tiger Game</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Additional meta tags for SEO and social media sharing -->
+    <meta name="description" content="Play Dragon Tiger, a fun and exciting card game, online.">
+    <meta property="og:title" content="Dragon Tiger Game">
+    <meta property="og:description" content="A fast-paced online card game where you can bet on Dragon or Tiger.">
+    <meta property="og:image" content="your-image.jpg"> <!-- Optional, replace with a game image -->
+    <meta property="og:url" content="https://fortune3195.github.io/Dragon-_tiger-_game/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Additional styling or JavaScript libraries can be included here -->
 </head>
 <body>
-  <div class="game-container">
-    <div class="dragon-tiger">
-      <div id="dragon" class="character">🐉 Dragon</div>
-      <div id="tiger" class="character">🐅 Tiger</div>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Header section with game title -->
+        <header>
+            <h1>Welcome to the Dragon Tiger Game!</h1>
+            <p>Place your bet on Dragon or Tiger and try your luck!</p>
+        </header>
+
+        <!-- Game interface section -->
+        <div id="game-interface">
+            <!-- Example of your game elements -->
+            <div id="dragon-container">
+                <h2>Dragon</h2>
+                <div id="dragon-card"></div>
+                <!-- Add any dynamic card image or number here -->
+            </div>
+            <div id="tiger-container">
+                <h2>Tiger</h2>
+                <div id="tiger-card"></div>
+                <!-- Add any dynamic card image or number here -->
+            </div>
+        </div>
+
+        <!-- Bet and result section -->
+        <div id="bet-section">
+            <button id="bet-dragon">Bet on Dragon</button>
+            <button id="bet-tiger">Bet on Tiger</button>
+            <div id="result"></div> <!-- Result will be shown here -->
+        </div>
     </div>
-    <button id="start-game">Start Game</button>
-    <div id="result"></div>
-  </div>
-  <script src="script.js"></script>
+
+    <!-- Link to external JavaScript files -->
+    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
